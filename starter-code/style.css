@@ -97,9 +97,13 @@ h1{
     background-color: var(--color-purple);
     color: var(--color-white);
 }
-.btn--full:hover, 
-.btn--full:active{
-    background-color: #cf711f;
+.btn--left:hover, 
+.btn--left:active{
+    background-color: #70c0d5;
+}
+.btn--right:hover, 
+.btn--right:active{
+    background-color:#b18add;
 }
 
 /********************/
@@ -142,4 +146,13 @@ h1{
 .gallery-image{
     width: 100%;
     border-radius: 1rem;
+}
+/*******************/
+/* Description Section */
+/*******************/
+.section-description{
+    padding: var(--space-xl) var(--space-xxl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
