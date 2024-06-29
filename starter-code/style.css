@@ -208,10 +208,9 @@ h2{
         url("../starter-code/assets/desktop/image-footer.jpg");
     background-size: cover;
     background-position: top;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    
     padding: var(--space-xl) var(--space-lg) ;
     color: var(--color-white);
 }
@@ -219,6 +218,7 @@ h2{
 h3{
     font-size: 4.4rem;
     line-height: 1;
+    grid-column: 2 / 4;
 }
 .footer-text{
     font-size: 1.6rem;
