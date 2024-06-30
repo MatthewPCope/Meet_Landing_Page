@@ -209,23 +209,25 @@ h2{
     background-size: cover;
     background-position: top;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    
-    padding: var(--space-xl) var(--space-lg) ;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    padding: 0 20rem;
     color: var(--color-white);
+    gap: 10rem;
 }
 
 h3{
-    font-size: 4.4rem;
+    font-size: 4.2rem;
     line-height: 1;
-    grid-column: 2 / 4;
 }
 .footer-text{
     font-size: 1.6rem;
     font-weight: 450;
     line-height: 1.5;
 }
-
+.btn-footer{
+    width: 75%;
+}
 .v1-3{
     color: var(--color-light-purple);
 }
