@@ -197,7 +197,7 @@ h2{
 } */
 .footer {
     margin-top: -2rem;
-    width: 100%;
+    max-width: 100%;
     min-height:30.8rem;
     background-image: 
         linear-gradient(
@@ -208,12 +208,15 @@ h2{
         url("../starter-code/assets/desktop/image-footer.jpg");
     background-size: cover;
     background-position: top;
-    display: flex;
-    /* grid-template-columns: repeat(3, 1fr);
-    place-content: center; */
+    display: grid;
+    grid-template-columns: 1fr;
+    
     padding: 0 10rem;
     color: var(--color-white);
     gap: 10rem;
+}
+.footer-content{
+    width: 100%;
 }
 
 h3{
@@ -235,7 +238,41 @@ h3{
 .v1-3{
     color: var(--color-light-purple);
 }
-
+@media(max-width: 23.5em){
+    .main{
+        
+        width: 100%;
+    }
+    .section-hero{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr;
+    }
+    .hero-content{
+        width: 100%;
+        display: grid;
+        
+    }
+    .left-hero-image{
+        grid-column: 1 / 3;
+    }
+    .right-hero-image{
+        grid-column: 3/  5;
+    }
+    .hero-text{
+        grid-row: 2;
+        grid-column: 2/4;
+    }
+    .footer{
+        width: 100%;
+        
+        
+    }
+    .section-gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
 
