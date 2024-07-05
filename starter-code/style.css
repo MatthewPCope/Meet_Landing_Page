@@ -40,6 +40,9 @@ body{
 /******************/
 .section-hero{
     margin: var(--space-xxl) -4rem;
+    
+}
+.hero-content{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -197,7 +200,7 @@ h2{
 } */
 .footer {
     margin-top: -2rem;
-    max-width: 100%;
+    width: 100%;
     min-height:30.8rem;
     background-image: 
         linear-gradient(
@@ -238,7 +241,7 @@ h3{
     color: var(--color-light-purple);
 }
 @media(max-width: 23.5em){
-    .main{
+    .html{
         
         width: 100%;
     }
@@ -263,7 +266,7 @@ h3{
         grid-column: 2/4;
     }
     .footer{
-        max-width: 120rem;
+        
         padding: 0 3.2rem;
         margin: 0 auto;
         
